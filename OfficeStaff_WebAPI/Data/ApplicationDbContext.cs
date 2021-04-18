@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using OfficeStaff_WebAPI.Models;
 
 namespace OfficeStaff_WebAPI.Data
 {
@@ -12,5 +13,6 @@ namespace OfficeStaff_WebAPI.Data
             : base(options)
         {
         }
+        public DbSet<OfficeStaff> OfficeStaffs { get; set; }
     }
 }
