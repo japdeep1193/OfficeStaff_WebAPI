@@ -14,5 +14,6 @@ namespace OfficeStaff_WebAPI.Data
         {
         }
         public DbSet<OfficeStaff> OfficeStaffs { get; set; }
+        public DbSet<OfficeClients> OfficeClients { get; set; }
     }
 }
